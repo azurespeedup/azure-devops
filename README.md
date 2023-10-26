@@ -6,3 +6,6 @@ This is a repo for Udacity Azure DevOps program
 # test github actions
 
 # test github actions - 2nd time
+
+# status badge markdown
+[![CI](https://github.com/azurespeedup/azure-devops/actions/workflows/main.yml/badge.svg)](https://github.com/azurespeedup/azure-devops/actions/workflows/main.yml)
