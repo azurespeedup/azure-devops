@@ -12,8 +12,17 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: run a script
-      run: echo hello world - trongnh2
-      
-    
-#test workflow actions
+    - name: Setup Python 3.8
+      uses: actions/setup-python@v1
+      with:
+        python-version: 3.8
+    - name: Instrall dependencies
+      run:
+        make install
+    - name: Test with pytest
+      run:
+        make test
+    - name: Format code
+      run:
+        make format
+          
